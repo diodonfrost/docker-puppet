@@ -1,6 +1,6 @@
 # Test for puppet docker container
 
-puppet_package = "puppet-agent"
+puppet_package = "puppet"
 
 control 'puppet-01' do
   impact 1.0
