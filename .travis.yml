@@ -44,7 +44,7 @@ env:
 
 before_install:
   - 'sudo docker pull ${distribution}:${version}'
-  - 'sudo docker build --no-cache --rm --file={distribution}-${version}-puppet/Dockerfile-{distribution}-${version} --tag=${distribution}-${version}:puppet tests'
+  - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=${distribution}-${version}:puppet tests'
 
 script:
   - container_id=$(mktemp)
