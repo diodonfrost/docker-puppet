@@ -11,8 +11,6 @@ env:
     version: "28"
   - distribution: fedora
     version: "27"
-  - distribution: fedora
-    version: "26"
   - distribution: ubuntu
     version: "18.04"
   - distribution: ubuntu
@@ -37,18 +35,14 @@ env:
     version: "1"
   - distribution: opensuse
     version: "42.3"
-  - distribution: archlinux
-    version: "rolling"
-  - distribution: gentoo
-    version: "stage3"
 
 before_install:
   - 'sudo docker pull ${distribution}:${version}'
-  - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=${distribution}-${version}:puppet tests'
+  - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=${distribution}-${version}:puppet ${distribution}-${version}-puppet'
 
 script:
   - container_id=$(mktemp)
-
+  - 'sudo docker run --detach --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro ${distribution}-${version}:puppet > "${container_id}"'
   # Test role
   - 'inspec exec tests/inspec -t docker://$(cat ${container_id})'
 

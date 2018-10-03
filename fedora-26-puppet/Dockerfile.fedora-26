@@ -20,8 +20,7 @@ RUN dnf -y install \
            puppet-agent \
            sudo \
            which \
-           python2-dnf \
-           openssh-server openssh-clients \
+           openssh-server openssh-clients wget \
    && dnf clean all
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
