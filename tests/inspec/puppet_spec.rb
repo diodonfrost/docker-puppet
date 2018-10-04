@@ -1,6 +1,8 @@
 # Test for puppet docker container
 
 puppet_package = "puppet-agent"
+puppet_package = "puppet" if os.name == "arch" or os.name == "gentoo"
+
 
 control 'puppet-01' do
   impact 1.0
