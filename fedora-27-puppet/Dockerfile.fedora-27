@@ -12,17 +12,18 @@ rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /lib/systemd/system/basic.target.wants/*; \
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 
+RUN dnf -y install \
+           git \
+           sudo \
+           which \
+           openssh-server openssh-clients \
+   && dnf clean all
+
 # Install puppet repo
 RUN rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-fedora-27.noarch.rpm
 
-RUN dnf -y install \
-           git \
-           puppet-agent \
-           sudo \
-           which \
-           python2-dnf \
-           openssh-server openssh-clients \
-   && dnf clean all
+# Install puppet-agent
+RUN dnf -y puppet-agent && dnf clean all
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
