@@ -23,7 +23,7 @@ RUN dnf -y install \
 RUN rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-fedora-28.noarch.rpm
 
 # Install puppet-agent
-RUN dnf -y puppet-agent && dnf clean all
+RUN dnf install -y puppet-agent && dnf clean all
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
