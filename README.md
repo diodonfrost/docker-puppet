@@ -29,6 +29,8 @@ Provides docker containers use for testing puppet role on some operating system.
 | [Amazonlinux 2][Amazonlinux] | [amazonlinux-2-puppet][]     | [diodonfrost/amazonlinux-2-puppet][]     |
 | [Amazonlinux 1][Amazonlinux] | [amazonlinux-1-puppet][]     | [diodonfrost/amazonlinux-1-puppet][]     |
 | [Opensuse 42.3][Opensuse]    | [opensuse-42.3-puppet][]     | [diodonfrost/opensuse-42.3-puppet][]     |
+| [Opensuse 42.2][Opensuse]    | [opensuse-42.2-puppet][]     | [diodonfrost/opensuse-42.2-puppet][]     |
+| [Opensuse 13.2][Opensuse]    | [opensuse-13.2-puppet][]     | [diodonfrost/opensuse-13.2-puppet][]     |
 | [Archlinux][Archlinux]       | [archlinux-rolling-puppet][] | [diodonfrost/archlinux-rolling-puppet][] |
 | [Gentoo stage3][Gentoo]      | [gentoo-stage3-puppet][]     | [diodonfrost/gentoo-stage3-puppet][]     |
 
@@ -60,6 +62,8 @@ Provides docker containers use for testing puppet role on some operating system.
 [amazonlinux-2-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/amazonlinux-2-puppet/Dockerfile.amazonlinux-2
 [amazonlinux-1-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/amazonlinux-1-puppet/Dockerfile.amazonlinux-1
 [opensuse-42.3-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-42.3-puppet/Dockerfile.opensuse-42.3
+[opensuse-42.2-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-42.2-puppet/Dockerfile.opensuse-42.2
+[opensuse-13.2-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-13.2-puppet/Dockerfile.opensuse-13.2
 [archlinux-rolling-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/archlinux-rolling-puppet/Dockerfile.archlinux-rolling
 [gentoo-stage3-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/gentoo-stage3-puppet/Dockerfile.gentoo-stage3
 
@@ -81,5 +85,7 @@ Provides docker containers use for testing puppet role on some operating system.
 [diodonfrost/amazonlinux-2-puppet]: https://hub.docker.com/r/diodonfrost/amazonlinux-2-puppet
 [diodonfrost/amazonlinux-1-puppet]: https://hub.docker.com/r/diodonfrost/oraclelinux-1-puppet
 [diodonfrost/opensuse-42.3-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-42.3-puppet
+[diodonfrost/opensuse-42.2-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-42.2-puppet
+[diodonfrost/opensuse-13.2-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-13.2-puppet
 [diodonfrost/archlinux-rolling-puppet]: https://hub.docker.com/r/diodonfrost/archlinux-rolling-puppet
 [diodonfrost/gentoo-stage3-puppet]: https://hub.docker.com/r/diodonfrost/gentoo-stage3-puppet
