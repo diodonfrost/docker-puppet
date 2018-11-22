@@ -13,6 +13,8 @@ Provides docker containers use for testing puppet role on some operating system.
 | ---------------------------- | -----------------------------| ---------------------------------------- |
 | [CentOS 7][CentOS]           | [centos-7-puppet][]          | [diodonfrost/centos-7-puppet][]          |
 | [CentOS 6][CentOS]           | [centos-6-puppet][]          | [diodonfrost/centos-6-puppet][]          |
+| [Fedora 29][Fedora]          | [fedora-29-puppet][]         | [diodonfrost/fedora-29-puppet][]         |
+| [Fedora 28][Fedora]          | [fedora-28-puppet][]         | [diodonfrost/fedora-28-puppet][]         |
 | [Fedora 27][Fedora]          | [fedora-27-puppet][]         | [diodonfrost/fedora-27-puppet][]         |
 | [Fedora 26][Fedora]          | [fedora-26-puppet][]         | [diodonfrost/fedora-26-puppet][]         |
 | [Ubuntu 18.04][Ubuntu]       | [ubuntu-18.04-puppet][]      | [diodonfrost/ubuntu-18.04-puppet][]      |
@@ -45,8 +47,10 @@ Provides docker containers use for testing puppet role on some operating system.
 
 [centos-7-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/centos-7-puppet/Dockerfile.centos-7
 [centos-6-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/centos-6-puppet/Dockerfile.centos-6
+[fedora-29-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-29-puppet/Dockerfile.fedora-29
+[fedora-28-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-28-puppet/Dockerfile.fedora-28
 [fedora-27-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-27-puppet/Dockerfile.fedora-27
-[fedora-26-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-26-puppet/Dockerfile.fedora-28
+[fedora-26-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-26-puppet/Dockerfile.fedora-26
 [ubuntu-18.04-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-18.04-puppet/Dockerfile.ubuntu-18.04
 [ubuntu-17.10-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-17.10-puppet/Dockerfile.ubuntu-17.10
 [ubuntu-16.04-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-16.04-puppet/Dockerfile.ubuntu-16.04
@@ -67,6 +71,8 @@ Provides docker containers use for testing puppet role on some operating system.
 
 [diodonfrost/centos-7-puppet]: https://hub.docker.com/r/diodonfrost/centos-7-puppet
 [diodonfrost/centos-6-puppet]: https://hub.docker.com/r/diodonfrost/centos-6-puppet
+[diodonfrost/fedora-29-puppet]: https://hub.docker.com/r/diodonfrost/fedora-29-puppet
+[diodonfrost/fedora-28-puppet]: https://hub.docker.com/r/diodonfrost/fedora-28-puppet
 [diodonfrost/fedora-27-puppet]: https://hub.docker.com/r/diodonfrost/fedora-27-puppet
 [diodonfrost/fedora-26-puppet]: https://hub.docker.com/r/diodonfrost/fedora-26-puppet
 [diodonfrost/ubuntu-18.04-puppet]: https://hub.docker.com/r/diodonfrost/ubuntu-18.04-puppet
