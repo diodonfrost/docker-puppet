@@ -2,6 +2,7 @@
 
 puppet_package = "puppet-agent"
 puppet_package = "puppet" if os.name == "arch"
+puppet_package = "puppet" if os.name == "fedora" and os.release =="29"
 
 control 'puppet-01' do
   impact 1.0
