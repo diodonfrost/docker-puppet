@@ -1,6 +1,9 @@
 FROM debian:7
 MAINTAINER diodonfrost <diodon.frost@diodonfrost.me>
 
+# Use Debian archive repository
+COPY ./apt/sources.list /etc/apt/sources.list
+
 RUN apt-get update -y  &&  apt-get install --fix-missing && \
     DEBIAN_FRONTEND=noninteractive \
     apt-get install -y \
