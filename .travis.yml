@@ -39,15 +39,15 @@ env:
     version: "1"
   - distribution: opensuse
     version: "42.3"
-#  - distribution: opensuse
-#    version: "15"
-#  - distribution: opensuse
-#    version: "15.1"
+  - distribution: opensuse
+    version: "15"
+  - distribution: opensuse
+    version: "15.1"
   - distribution: archlinux
     version: "rolling"
 
 before_install:
-  - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=diodonfrost/${distribution}-${version}-puppet:latest .'
+  - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=diodonfrost/${distribution}-${version}-puppet:latest ${distribution}-${version}-puppet'
 
 script:
   - container_id=$(mktemp)
