@@ -17,6 +17,7 @@ Provides docker containers use for testing puppet role on some operating system.
 | [Fedora 28][Fedora]          | [fedora-28-puppet][]         | [diodonfrost/fedora-28-puppet][]         |
 | [Fedora 27][Fedora]          | [fedora-27-puppet][]         | [diodonfrost/fedora-27-puppet][]         |
 | [Fedora 26][Fedora]          | [fedora-26-puppet][]         | [diodonfrost/fedora-26-puppet][]         |
+| [Ubuntu 19.04][Ubuntu]       | [ubuntu-19.04-puppet][]      | [diodonfrost/ubuntu-19.04-puppet][]      |
 | [Ubuntu 18.04][Ubuntu]       | [ubuntu-18.04-puppet][]      | [diodonfrost/ubuntu-18.04-puppet][]      |
 | [Ubuntu 17.10][Ubuntu]       | [ubuntu-17.10-puppet][]      | [diodonfrost/ubuntu-17.10-puppet][]      |
 | [Ubuntu 16.04][Ubuntu]       | [ubuntu-16.04-puppet][]      | [diodonfrost/ubuntu-16.04-puppet][]      |
@@ -53,6 +54,7 @@ Provides docker containers use for testing puppet role on some operating system.
 [fedora-28-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-28-puppet/Dockerfile.fedora-28
 [fedora-27-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-27-puppet/Dockerfile.fedora-27
 [fedora-26-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/fedora-26-puppet/Dockerfile.fedora-26
+[ubuntu-19.04-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-19.04-puppet/Dockerfile.ubuntu-19.04
 [ubuntu-18.04-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-18.04-puppet/Dockerfile.ubuntu-18.04
 [ubuntu-17.10-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-17.10-puppet/Dockerfile.ubuntu-17.10
 [ubuntu-16.04-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/ubuntu-16.04-puppet/Dockerfile.ubuntu-16.04
@@ -79,6 +81,7 @@ Provides docker containers use for testing puppet role on some operating system.
 [diodonfrost/fedora-28-puppet]: https://hub.docker.com/r/diodonfrost/fedora-28-puppet
 [diodonfrost/fedora-27-puppet]: https://hub.docker.com/r/diodonfrost/fedora-27-puppet
 [diodonfrost/fedora-26-puppet]: https://hub.docker.com/r/diodonfrost/fedora-26-puppet
+[diodonfrost/ubuntu-19.04-puppet]: https://hub.docker.com/r/diodonfrost/ubuntu-19.04-puppet
 [diodonfrost/ubuntu-18.04-puppet]: https://hub.docker.com/r/diodonfrost/ubuntu-18.04-puppet
 [diodonfrost/ubuntu-17.10-puppet]: https://hub.docker.com/r/diodonfrost/ubuntu-17.10-puppet
 [diodonfrost/ubuntu-16.04-puppet]: https://hub.docker.com/r/diodonfrost/ubuntu-16.04-puppet
