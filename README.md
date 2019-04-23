@@ -35,6 +35,7 @@ Provides docker containers use for testing puppet role on some operating system.
 | [Opensuse 42.3][Opensuse]    | [opensuse-42.3-puppet][]     | [diodonfrost/opensuse-42.3-puppet][]     |
 | [Opensuse 42.2][Opensuse]    | [opensuse-42.2-puppet][]     | [diodonfrost/opensuse-42.2-puppet][]     |
 | [Opensuse 13.2][Opensuse]    | [opensuse-13.2-puppet][]     | [diodonfrost/opensuse-13.2-puppet][]     |
+| [Alpine][Alpine]             | [alpine-rolling-puppet][]    | [diodonfrost/alpine-rolling-puppet][]    |
 | [Archlinux][Archlinux]       | [archlinux-rolling-puppet][] | [diodonfrost/archlinux-rolling-puppet][] |
 | [Gentoo stage3][Gentoo]      | [gentoo-stage3-puppet][]     | [diodonfrost/gentoo-stage3-puppet][]     |
 
@@ -45,6 +46,7 @@ Provides docker containers use for testing puppet role on some operating system.
 [Oraclelinux]: https://hub.docker.com/_/oraclelinux/
 [Amazonlinux]: https://hub.docker.com/_/amazonlinux/
 [Opensuse]: https://hub.docker.com/_/opensuse/
+[Alpine]: https://hub.docker.com/_/alpine
 [Archlinux]: https://hub.docker.com/r/base/archlinux/
 [Gentoo]: https://hub.docker.com/r/gentoo/stage3-amd64/
 
@@ -72,6 +74,7 @@ Provides docker containers use for testing puppet role on some operating system.
 [opensuse-42.3-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-42.3-puppet/Dockerfile.opensuse-42.3
 [opensuse-42.2-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-42.2-puppet/Dockerfile.opensuse-42.2
 [opensuse-13.2-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/opensuse-13.2-puppet/Dockerfile.opensuse-13.2
+[alpine-rolling-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/alpine-rolling-puppet/Dockerfile.alpine-rolling
 [archlinux-rolling-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/archlinux-rolling-puppet/Dockerfile.archlinux-rolling
 [gentoo-stage3-puppet]: https://github.com/diodonfrost/docker-puppet/blob/master/gentoo-stage3-puppet/Dockerfile.gentoo-stage3
 
@@ -99,5 +102,6 @@ Provides docker containers use for testing puppet role on some operating system.
 [diodonfrost/opensuse-42.3-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-42.3-puppet
 [diodonfrost/opensuse-42.2-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-42.2-puppet
 [diodonfrost/opensuse-13.2-puppet]:  https://hub.docker.com/r/diodonfrost/opensuse-13.2-puppet
+[diodonfrost/alpine-rolling-puppet]: https://hub.docker.com/r/diodonfrost/alpine-rolling-puppet
 [diodonfrost/archlinux-rolling-puppet]: https://hub.docker.com/r/diodonfrost/archlinux-rolling-puppet
 [diodonfrost/gentoo-stage3-puppet]: https://hub.docker.com/r/diodonfrost/gentoo-stage3-puppet
