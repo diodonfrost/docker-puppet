@@ -3,11 +3,28 @@
 puppet_package = "puppet-agent"
 puppet_package = "puppet" if os.name == "arch"
 puppet_package = "puppet" if os.name == "fedora" and os.release =="29"
+package_resource_dont_supported_os = ['gentoo']
 
 control 'puppet-01' do
   impact 1.0
   title 'Puppet agent install'
   desc 'Puppet agent should be installed'
+  unless package_resource_dont_supported_os.include? os.name
+    describe.one do
+      describe package(puppet_package) do
+        it { should be_installed }
+      end
+      describe gem('puppet') do
+        it { should be_installed }
+      end
+    end
+  end
+end
+
+control 'puppet-02' do
+  impact 1.0
+  title 'Puppet command'
+  desc 'Puppet command should be functionnal'
   describe.one do
     describe package(puppet_package) do
       it { should be_installed }
