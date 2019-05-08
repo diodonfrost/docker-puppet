@@ -3,6 +3,7 @@
 puppet_package = "puppet-agent"
 puppet_package = "puppet" if os.name == "arch"
 puppet_package = "puppet" if os.name == "fedora" and os.release =="29"
+puppet_package = "puppet" if os.name == "ubuntu" and os.release =="19.04"
 package_resource_dont_supported_os = ['gentoo']
 
 control 'puppet-01' do
