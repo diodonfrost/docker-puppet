@@ -9,8 +9,8 @@ env:
     version: "6"
   - distribution: fedora
     version: "29"
-  - distribution: fedora
-    version: "28"
+#  - distribution: fedora
+#    version: "28"
   - distribution: fedora
     version: "27"
   - distribution: fedora
@@ -43,10 +43,10 @@ env:
     version: "42.3"
   - distribution: opensuse
     version: "42.2"
-  - distribution: opensuse
-    version: "15.1"
-  - distribution: opensuse
-    version: "15"
+#  - distribution: opensuse
+#    version: "15.1"
+#  - distribution: opensuse
+#    version: "15"
   - distribution: opensuse
     version: "13.2"
   - distribution: archlinux
