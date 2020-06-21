@@ -9,14 +9,10 @@ env:
     version: "6"
   - distribution: fedora
     version: "29"
-#  - distribution: fedora
-#    version: "28"
   - distribution: fedora
     version: "27"
   - distribution: fedora
     version: "26"
-  - distribution: ubuntu
-    version: "19.04"
   - distribution: ubuntu
     version: "18.04"
   - distribution: ubuntu
@@ -29,8 +25,6 @@ env:
     version: "9"
   - distribution: debian
     version: "8"
-#  - distribution: debian
-#    version: "7"
   - distribution: oraclelinux
     version: "7"
   - distribution: oraclelinux
@@ -43,16 +37,10 @@ env:
     version: "42.3"
   - distribution: opensuse
     version: "42.2"
-#  - distribution: opensuse
-#    version: "15.1"
-#  - distribution: opensuse
-#    version: "15"
   - distribution: opensuse
     version: "13.2"
   - distribution: archlinux
     version: "rolling"
-#  - distribution: alpine
-#    version: "rolling"
 
 before_install:
   - 'sudo docker build --no-cache --rm --file=${distribution}-${version}-puppet/Dockerfile.${distribution}-${version} --tag=diodonfrost/${distribution}-${version}-puppet:latest ${distribution}-${version}-puppet'
@@ -73,3 +61,4 @@ after_success:
 
   # Delete container
   - 'sudo docker rm -f "$(cat ${container_id})"'
+
