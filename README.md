@@ -1,6 +1,6 @@
 # puppet
 
-[![Build Status](https://travis-ci.com/diodonfrost/docker-puppet.svg?branch=master)](https://travis-ci.org/diodonfrost/docker-puppet)
+[![Build](https://github.com/diodonfrost/docker-puppet/workflows/Build/badge.svg)](https://github.com/diodonfrost/docker-puppet/actions)
 [![Docker Automated build](https://img.shields.io/docker/automated/diodonfrost/centos-7-puppet.svg?maxAge=2592000)](https://hub.docker.com/r/diodonfrost/centos-7-puppet/)
 
 Provides dockerfiles with puppet and in some case systemd integration.
