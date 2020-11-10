@@ -1,5 +1,5 @@
 FROM amazonlinux:1
-MAINTAINER diodonfrost <diodon.frost@diodonfrost.me>
+LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
 # Install Puppet and other requirements.
 RUN rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-el-6.noarch.rpm
