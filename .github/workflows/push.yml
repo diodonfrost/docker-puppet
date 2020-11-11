@@ -29,6 +29,8 @@ jobs:
             version: 8
           - os: debian
             version: 9
+          - os: debian
+            version: 10
           - os: fedora
             version: 26
           - os: fedora
