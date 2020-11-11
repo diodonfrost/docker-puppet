@@ -25,6 +25,8 @@ jobs:
             version: 6
           - os: centos
             version: 7
+          - os: centos
+            version: 8
           - os: debian
             version: 8
           - os: debian
