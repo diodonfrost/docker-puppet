@@ -51,6 +51,8 @@ jobs:
             version: 6
           - os: oraclelinux
             version: 7
+          - os: oraclelinux
+            version: 8
           - os: ubuntu
             version: 12.04
           - os: ubuntu
