@@ -40,6 +40,8 @@ jobs:
             version: 28
           - os: fedora
             version: 29
+          - os: fedora
+            version: 30
           - os: opensuse
             version: 13.2
           - os: opensuse
