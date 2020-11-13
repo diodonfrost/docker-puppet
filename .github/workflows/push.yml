@@ -53,6 +53,8 @@ jobs:
             version: 15.1
           - os: opensuse
             version: 15
+          - os: opensuse
+            version: leap
           - os: oraclelinux
             version: 6
           - os: oraclelinux
