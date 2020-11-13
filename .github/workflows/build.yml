@@ -54,6 +54,8 @@ jobs:
             version: 15
           - os: opensuse
             version: leap
+          - os: opensuse
+            version: tumbleweed
           - os: oraclelinux
             version: 6
           - os: oraclelinux
