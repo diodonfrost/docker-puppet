@@ -97,3 +97,12 @@ jobs:
 
           # Pushing image to dockerhub
           docker push diodonfrost/puppet-${{ matrix.distribution.os }}:${{ matrix.distribution.version }}
+
+      - name: Push Docker image to Github Docker registry
+        run: |
+          # Login on Github Docker registry before pushing
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u diodonfrost --password-stdin
+
+          # Pushing image to Github Docker registry
+          docker tag diodonfrost/puppet-${{ matrix.distribution.os }}:${{ matrix.distribution.version }} docker.pkg.github.com/diodonfrost/docker-puppet/puppet-${{ matrix.distribution.os }}:${{ matrix.distribution.version }}
+          docker push docker.pkg.github.com/diodonfrost/docker-puppet/puppet-${{ matrix.distribution.os }}:${{ matrix.distribution.version }}
