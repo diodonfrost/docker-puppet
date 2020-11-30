@@ -19,7 +19,7 @@ jobs:
           - os: amazonlinux
             version: 1
           - os: archlinux
-            version: rolling
+            version: latest
           - os: centos
             version: 6
           - os: centos
