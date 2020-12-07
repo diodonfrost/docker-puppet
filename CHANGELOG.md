@@ -1,5 +1,22 @@
 #  (2020-11-14)
 
+## 2.0.1
+
+### Bug Fixes
+
+* **centos-6:** use centos vault repository ([8467020](https://github.com/diodonfrost/docker-puppet/commit/8467020d81f82c8931c073bec0a13295a49becc0))
+* **oraclelinux-6:** removing epel repository ([24e4220](https://github.com/diodonfrost/docker-puppet/commit/24e422022dbe258dbabf0d7a597bf6cf30affddd))
+* **README.md:** change url links ([84e6f83](https://github.com/diodonfrost/docker-puppet/commit/84e6f83ebde5e2959350d5a002150d45fb021d71))
+
+## 2.0.0
+
+### BREAKING CHANGE
+* **docker:** change docker image name structure ([4359e26](https://github.com/diodonfrost/docker-puppet/commit/4359e2664bd509065737c54f360db1c0a8073d65))
+* **docker:** replace the version name rolling by latest ([fde802f](https://github.com/diodonfrost/docker-puppet/commit/fde802f7b6428e7dd5af707098649c6147d8ff7c))
+
+### Feature
+* **registry:** push image to github registry ([756c3cf](https://github.com/diodonfrost/docker-puppet/commit/756c3cf07d5c27924da44303a00a68764129c0ed))
+
 ## 1.7.0
 
 ### Features
