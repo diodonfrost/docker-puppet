@@ -1,6 +1,10 @@
 FROM centos:6
 LABEL maintainer="diodonfrost <diodon.frost@diodonfrost.me>"
 
+# Use CentOS archive repository
+RUN rm -f /etc/yum.repos.d/*
+COPY ./centos-6-vault-repos/CentOS-Vault.repo /etc/yum.repos.d/CentOS-Vault.repo
+
 RUN yum -y install epel-release
 RUN rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-el-6.noarch.rpm
 RUN yum -y install git puppet-agent sudo openssh-server openssh-clients
