@@ -13,7 +13,7 @@ rm -f /usr/lib/systemd/system/sockets.target.wants/*initctl*; \
 rm -f /usr/lib/systemd/system/basic.target.wants/*;\
 rm -f /usr/lib/systemd/system/anaconda.target.wants/*;
 
-RUN zypper -n install git wget sudo openssh && zypper clean
+RUN zypper -n install git wget sudo openssh shadow && zypper clean
 
 # Install puppet repo
 RUN wget https://yum.puppet.com/puppet/puppet-release-sles-15.noarch.rpm; \
