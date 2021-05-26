@@ -1,4 +1,10 @@
-#  (2020-11-14)
+#  (2021-05-26)
+
+
+### Unreleased
+### Features
+
+* **opensuse:tumbleweed:** install shadow package ([a3b9c57](https://github.com/diodonfrost/docker-puppet/commit/a3b9c572cffac7797c27cf7f17a2c61b261b26dd))
 
 ## 2.0.1
 
